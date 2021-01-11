@@ -17,4 +17,7 @@ export class HeroService {
   ngOnInit() {
     this.getHeroes();
   }
+  getHero(id: number): Observable<Hero>{
+    return of(HEROES.find(hero => hero.id === id));
+  }
 }

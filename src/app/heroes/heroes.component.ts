@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero} from '../Hero';
+import { Hero} from '../hero';
 import { HeroService } from '../hero.service';
 import { HEROES } from '../mock-heros';
 import {MessageService} from '../message.service';
@@ -27,6 +27,7 @@ export class HeroesComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getHeroes();
   }
 
 }
